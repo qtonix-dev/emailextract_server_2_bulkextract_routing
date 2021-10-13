@@ -1,0 +1,43 @@
+{
+  "name": "server_second",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.1",
+    "dotenv": "^9.0.2",
+    "dotenv-safe": "^8.2.0",
+    "email-crawler": "^1.0.4",
+    "email-templates": "^8.0.7",
+    "express": "^4.17.1",
+    "get-site-urls": "^1.1.7",
+    "http-errors": "^1.8.0",
+    "imagekit": "^3.1.2",
+    "jade": "^1.11.0",
+    "js-crawler": "^0.3.21",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-email-extractor": "^1.0.3",
+    "nodemailer": "^6.6.1",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2",
+    "react-notifications": "^1.7.2",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.8",
+    "velocityjs": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
