@@ -1,5 +1,6 @@
 const response = require('express');
 
+const paginate = require('mongoose-pagination');
 
 const BulkDomainExtract = require('../models/BulkDomainExtract');
 const BulkDomainExtractInfo = require('../models/BulkDomainExtractInfo');
@@ -28,6 +29,17 @@ const viewdetail = async (req,res) => {
     bulkdomainextractemails,
     bulkdomainextractcount
   })
+
+
+  // BulkDomainExtractCountForShow
+  // .find({uuid:req.params.uuid})
+  // .paginate(2, 2, function(err, docs, total) {
+  //   console.log('total: ', total, 'docs: ', docs)
+  //   res.json({
+  //     total,
+  //     docs
+  //   })
+  // });
 }
 
 module.exports={index,viewdetail};
