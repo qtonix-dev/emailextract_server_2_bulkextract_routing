@@ -50,10 +50,10 @@ const viewdetail = async (req,res) => {
   //     docs
   //   })
   // });
-  
+
 	// https://www.npmjs.com/package/react-js-pagination
-  
-  
+
+
 }
 
 module.exports={index,viewdetail};
