@@ -25,10 +25,8 @@ const viewdetail = async (req,res) => {
   var bulkdomainextractemails = await BulkDomainExtractEmails.find({uuid:req.params.uuid});
   var bulkdomainextractcount = await BulkDomainExtractCountForShow.find({uuid:req.params.uuid});
 
-
   var userinfo= await User.findOne({_id:req.params.userid});
   var userpackageinfo= await Package.findOne({_id:userinfo.packageid});
-
 
   res.json({
     response:true,
@@ -39,20 +37,6 @@ const viewdetail = async (req,res) => {
     userinfo,
     userpackageinfo
   })
-
-
-  // BulkDomainExtractCountForShow
-  // .find({uuid:req.params.uuid})
-  // .paginate(2, 2, function(err, docs, total) {
-  //   console.log('total: ', total, 'docs: ', docs)
-  //   res.json({
-  //     total,
-  //     docs
-  //   })
-  // });
-
-	// https://www.npmjs.com/package/react-js-pagination
-
 
 }
 
